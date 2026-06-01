@@ -3,4 +3,7 @@ numpy
 matplotlib
 scikit-learn
 setuptools
--e .
+google-cloud-storage
+pyyaml
+ipykernel
+# -e .
