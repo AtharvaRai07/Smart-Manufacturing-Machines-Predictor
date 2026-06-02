@@ -106,8 +106,11 @@ class DataPreprocessing:
             logging.info("Scaling the features using StandardScaler")
 
             scaler = StandardScaler()
-            X_train = scaler.fit_transform(X_train)
-            X_test = scaler.transform(X_test)
+            X_train_scaled = scaler.fit_transform(X_train)
+            X_test_scaled = scaler.transform(X_test)
+
+            X_train = pd.DataFrame(X_train_scaled, columns=X_train.columns)
+            X_test = pd.DataFrame(X_test_scaled, columns=X_test.columns)
 
             logging.info("Feature scaling completed successfully")
             return X_train, X_test, scaler

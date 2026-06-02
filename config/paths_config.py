@@ -15,3 +15,9 @@ Y_TEST_PATH = os.path.join(PREPROCESSED_DIR, "y_test.csv")
 
 LABEL_ENCODER_PATH = os.path.join(PREPROCESSED_DIR, "label_encoder.pkl")
 SCALER_PATH = os.path.join(PREPROCESSED_DIR, "scaler.pkl")
+
+################################# MODEL TRAINING #################################
+MODEL_DIR = "artifacts/model"
+MODEL_PATH = os.path.join(MODEL_DIR, "model.pkl")
+MODEL_METRICS_PATH = os.path.join(MODEL_DIR, "metrics.txt")
+CONF_MATRIX_PATH = os.path.join(MODEL_DIR, "confusion_matrix.png")

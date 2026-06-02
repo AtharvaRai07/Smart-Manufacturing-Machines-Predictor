@@ -45,7 +45,7 @@ def save_csv(df:pd.DataFrame, file_path:str):
         else:
             out_df = pd.DataFrame(df)
 
-        out_df.to_csv(file_path, index=False, header=False)
+        out_df.to_csv(file_path, index=False)
 
     except Exception as e:
         logging.error("Error while saving CSV file")
